@@ -9,6 +9,7 @@ pipeline {
 		stage("test") {
 			steps {
 				echo "testing the application"
+				sh 'ls -alh'
 			}
 		}
 		stage("deploy"){
